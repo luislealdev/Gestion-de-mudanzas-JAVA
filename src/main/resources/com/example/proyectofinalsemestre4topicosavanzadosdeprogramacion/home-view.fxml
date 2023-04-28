@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion.controllers.HomeController"
+      style="-fx-background-color: white"
+            >
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+<GridPane alignment="BASELINE_CENTER">
+    <ImageView fx:id="homeImage" fitHeight="1200.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0"/>
+    <VBox GridPane.columnIndex="1">
+        <!--
+        <Text style="-fx-font-size: 24px; -fx-fill: #92B3F9;" text="Preocupate por disfrutar tu nueva vida,"/>
+        <Text style="-fx-font-size: 24px; -fx-fill: #FD877F;" text="       nosotros nos encargamos de llevar todo a ti "/>
+        -->
+    <VBox alignment="CENTER">
+        <Text style="-fx-font-size: 70px; -fx-fill: #1A0E91;" text="MOVE IT NOW!"/>
+    </VBox>
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <VBox style="-fx-padding: 20px">
+            <Label style="-fx-font-size: 20px" alignment="CENTER" text="✔ Transporte de carros"/>
+            <Label style="-fx-font-size: 20px" text="✔ Transporte de muebles de casa"/>
+            <Label style="-fx-font-size: 20px" text="✔ Transporte de oficinas"/>
+            <Label style="-fx-font-size: 20px" text="✔ Empacadores y transportistas"/>
+        </VBox>
+        <VBox alignment="CENTER">
+            <Button text="Solicitar ahora" styleClass="btn-primary"/>
+        </VBox>
+    </VBox>
+</GridPane>
+</VBox>

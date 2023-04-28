@@ -1,0 +1,6 @@
+.btn-primary{
+    -fx-background-color: #1A0E91;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-border-radius: 10px;
+}
