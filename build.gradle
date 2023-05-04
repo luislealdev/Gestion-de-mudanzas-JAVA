@@ -40,9 +40,16 @@ dependencies {
     }
     implementation('org.kordamp.ikonli:ikonli-javafx:12.3.1')
     implementation('org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0')
-
+    implementation('org.kordamp.ikonli:ikonli-fontawesome5-pack:12.3.1')
+    implementation('org.kordamp.ikonli:ikonli-win10-pack:12.3.1')
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.20.0'
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.32'
+
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+    implementation 'com.itextpdf:itext7-core:7.2.3'
 }
 
 test {
