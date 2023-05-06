@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f839e618-53b8-4134-a8e6-73735caa9526" name="Changes" comment="Add new views and controllers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/controllers/ContactoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/contacto-view.fxml" afterDir="false" />
+    <list default="true" id="f839e618-53b8-4134-a8e6-73735caa9526" name="Changes" comment="Add navbar and logic to change view">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/contacto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/solicitud.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/contacto-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/contacto-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/solicitud-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectofinalsemestre4topicosavanzadosdeprogramacion/solicitud-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/luisleal/Desktop/Proyecto-Final-Semestre4-TopicosAvanzadosDeProgramacion",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -117,17 +120,6 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Proyecto-Final-Semestre4-TopicosAvanzadosDeProgramacion [run]" />
@@ -145,7 +137,9 @@
       <workItem from="1682622290295" duration="5574000" />
       <workItem from="1682704619947" duration="3371000" />
       <workItem from="1682816724245" duration="2577000" />
-      <workItem from="1683158608840" duration="2257000" />
+      <workItem from="1683158608840" duration="2957000" />
+      <workItem from="1683163622172" duration="3449000" />
+      <workItem from="1683337003176" duration="3940000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1682647681553</created>
@@ -168,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682818900966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add navbar and logic to change view">
+      <created>1683163535167</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683163535167</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +179,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Add home view (First part)" />
     <MESSAGE value="Add new views and controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new views and controllers" />
+    <MESSAGE value="Add navbar and logic to change view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add navbar and logic to change view" />
   </component>
 </project>

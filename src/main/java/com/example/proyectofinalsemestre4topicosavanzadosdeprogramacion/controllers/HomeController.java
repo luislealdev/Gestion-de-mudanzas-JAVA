@@ -13,16 +13,15 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
     @FXML
-    private ImageView homeImage;
+    private ImageView homeImage, contactImage;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Image image = null;
         try {
-            image = new Image(new FileInputStream("src/main/resources/images/home.jpg"));
+            homeImage.setImage(new Image(new FileInputStream("src/main/resources/images/home.jpg")));
+            contactImage.setImage(new Image(new FileInputStream("src/main/resources/images/contacto.png")));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-        homeImage.setImage(image);
     }
 }

@@ -11,6 +11,7 @@ module com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion {
     requires layout;
     requires java.desktop;
     requires org.slf4j;
+    requires javafx.graphics;
 
     opens com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion to javafx.fxml;
     opens com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion.controllers;

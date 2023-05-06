@@ -6,9 +6,93 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion.controllers.ContactoController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion.controllers.ContactoController"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: white">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
 
-</AnchorPane>
+    <VBox alignment="CENTER" spacing="10">
+        <Label text="Contáctanos ahora" style="-fx-font-size: 25px"/>
+        <HBox spacing="50" alignment="CENTER">
+            <VBox styleClass="bg-color-grey" spacing="10">
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                </padding>
+                <Label text="Dónde encontrarnos" style="-fx-font-size: 20px;"/>
+
+                <Label text="contacto@moveitnow.com" style="-fx-font-size: 18px">
+                    <graphic>
+                        <FontIcon iconLiteral="far-envelope"/>
+                    </graphic>
+                </Label>
+                <Label text="461 123 4567" style="-fx-font-size: 18px">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-home"/>
+                    </graphic>
+                </Label>
+                <Label text="461 765 4321" style="-fx-font-size: 18px">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-phone"/>
+                    </graphic>
+                </Label>
+                <Label text="Av. Tecnológico #137, col.Tecnológico, Celaya, Guanajuato, México."
+                       style="-fx-font-size: 18px">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-map-marker-alt"/>
+                    </graphic>
+                </Label>
+
+                <Label text="Move it now" style="-fx-font-size: 18px">
+                    <graphic>
+                        <FontIcon iconLiteral="fab-facebook"/>
+                    </graphic>
+                </Label>
+                <Label text="moveitnow" style="-fx-font-size: 18px">
+                    <graphic>
+                        <FontIcon iconLiteral="fab-instagram"/>
+                    </graphic>
+                </Label>
+            </VBox>
+
+            <VBox styleClass="bg-color-grey" alignment="CENTER" spacing="10">
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                </padding>
+                <Label text="¡Mándanos un mensaje!" style="-fx-font-size: 18px"/>
+
+                <GridPane maxWidth="-Infinity">
+                    <Label text="Nombre completo" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                           style="-fx-padding: 10 0"/>
+                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                    <Label text="Teléfono" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                           style="-fx-padding: 10 0"/>
+                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                    <Label text="Correo electrónico" GridPane.columnIndex="0" GridPane.rowIndex="2"
+                           style="-fx-padding: 10 0"/>
+                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                    <Label text="Asunto" GridPane.columnIndex="0" GridPane.rowIndex="3"
+                           style="-fx-padding: 10 0"/>
+                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                    <Label text="Mensaje" GridPane.rowIndex="4" GridPane.columnIndex="0"
+                           style="-fx-padding: 10 0"/>
+                    <TextArea GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                </GridPane>
+                <Button text="Enviar ahora" styleClass="btn-primary"/>
+            </VBox>
+        </HBox>
+    </VBox>
+
+
+</VBox>
+

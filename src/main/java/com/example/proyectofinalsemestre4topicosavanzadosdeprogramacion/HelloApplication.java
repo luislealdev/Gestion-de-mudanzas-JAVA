@@ -2,9 +2,11 @@ package com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -72,8 +74,17 @@ public class HelloApplication extends Application {
         icon_offices.setIconColor(Paint.valueOf("white"));
         btn_admin.setGraphic(icon_offices);
 
+        //Create footer
+        HBox footer = new HBox();
+        footer.setAlignment(Pos.CENTER);
+        footer.getStyleClass().add("footer");
+        Label footer_text = new Label("Copyright 2023 Move It Now");
+        footer_text.setTextFill(Paint.valueOf("white"));
+        footer.getChildren().add(footer_text);
+
         borderPane = new BorderPane();
         borderPane.setTop(navbar);
+        borderPane.setBottom(footer);
 
         borderPane.setCenter(home_section());
 

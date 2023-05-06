@@ -1,3 +1,7 @@
+TextField{
+    -fx-background-radius:30px;
+    -fx-padding: 5px;
+}
 .btn-primary{
     -fx-background-color: #1A0E91;
     -fx-text-fill: white;
@@ -5,11 +9,11 @@
     -fx-border-radius: 10px;
 }
 
-TextField{
-    -fx-border-radius: 50px;
-    -fx-padding: 5px;
-
+.bg-color-grey{
+    -fx-background-color: #f8f8f8;
+    -fx-background-radius:50px;
 }
+
 .navbar{
     -fx-flex-direction: row;
     -fx-display: flex;
@@ -29,7 +33,7 @@ TextField{
     -fx-display: flex;
     -fx-justify-content: center;
     -fx-align-items: center;
-    -fx-background-color: #199ed3;
+    -fx-background-color: #1A0E91;
     -fx-border-insets: 5px;
     -fx-background-insets: 5px;
     -fx-font-size: 16px;
@@ -40,8 +44,13 @@ TextField{
 }
 
 .navbar-button:hover{
-    -fx-background-color: #107ba4;
+    -fx-background-color: #210cea;
     -fx-cursor: hand;
+}
+
+.footer{
+    -fx-background-color: black;
+    -fx-text-fill: white;
 }
 
 .btn-print{
@@ -179,4 +188,3 @@ TextField{
 .table-view .virtual-flow .scroll-bar:horizontal .thumb {
     -fx-background-color:  #199ed3;
 }
-

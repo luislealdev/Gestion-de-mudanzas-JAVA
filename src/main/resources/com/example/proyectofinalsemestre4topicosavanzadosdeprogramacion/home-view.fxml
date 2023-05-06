@@ -20,7 +20,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
         </padding>
 
-        <GridPane alignment="BASELINE_CENTER" style="-fx-background-color: white">
+        <GridPane alignment="BASELINE_CENTER" style="-fx-background-color: white" vgap="50">
             <ImageView fx:id="homeImage" fitHeight="1200.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true"
                        GridPane.columnIndex="0"/>
             <VBox GridPane.columnIndex="1">
@@ -41,67 +41,39 @@
                 </VBox>
             </VBox>
 
-            <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" alignment="CENTER">
                 <Text text="Captura tu solicitud" style="-fx-font-size: 30px;"/>
+            </HBox>
+
+            <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
                 <Label style="-fx-font-size: 20px" text="✔ Rápido"/>
                 <Label style="-fx-font-size: 20px" text="✔ Fácil"/>
                 <Label style="-fx-font-size: 20px" text="✔ Sin registrarte"/>
                 <Label style="-fx-font-size: 20px" text="✔ Sin spam"/>
             </VBox>
 
-            <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-font-size: 20px">
-                <Label text="1. Da click en el botón de solicitud de la aplicación"/>
-                <Label text="2. Llena el formulario con los datos que se piden"/>
+            <VBox GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-font-size: 20px">
+                <Label text="1. Da click en el botón de solicitud en la parte superior."/>
+                <Label text="2. Llena el formulario con los datos que se piden."/>
                 <Label text="3. ¡Mueve todo lo que necesites!"/>
             </VBox>
 
-            <VBox GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
-                <HBox>
-                    <VBox>
-                        <Text text="Contactanos ahora" style="-fx-font-size: 50px; -fx-fill: #FD877F;"/>
-                    </VBox>
-                    <VBox>
-                        <padding>
-                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-                        </padding>
-                        <Text text="Envíanos un mensaje"/>
-                        <GridPane alignment="BASELINE_CENTER">
-                            <Label text="Nombre completo" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" alignment="CENTER">
+                <Text text="Contáctanos" style="-fx-font-size: 30px;"/>
+            </HBox>
 
-                            <Label text="Teléfono" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <ImageView fx:id="contactImage" fitHeight="1000.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true"
+                       GridPane.columnIndex="0" GridPane.rowIndex="4"/>
 
-                            <Label text="Correo electrónico" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-
-                            <Label text="Asunto" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-
-                            <Label text="Mensaje" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-                            <TextArea GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-
-                            <Button text="Enviar" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-                        </GridPane>
-                    </VBox>
-                </HBox>
-
+            <VBox GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-font-size: 20px;" alignment="CENTER_LEFT">
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                </padding>
+                <Label text="1. Da click en el botón de contacto."/>
+                <Label text="2. Llena el formulario con los datos que se piden."/>
+                <Label text="3. Te contactaremos lo más pronto posible"/>
             </VBox>
 
-            <HBox style="-fx-background-color: black;" alignment="CENTER" GridPane.rowIndex="3" GridPane.columnSpan="2">
-                <VBox>
-                    <Label text="Move it now" style="-fx-text-fill: white"/>
-                    <Label style="-fx-text-fill: white"
-                           text="Move it now es una empresa de transporte de muebles, carros, entre otras cosas. Basada en Celaya, Guanajuato, México."/>
-                </VBox>
-
-                <Label text="Copyright 2023 - Move it now" style="-fx-text-fill: white"/>
-
-                <VBox>
-                    <Label text="Nuestras novedades" style="-fx-text-fill: white"/>
-                </VBox>
-
-            </HBox>
         </GridPane>
     </ScrollPane>
 </VBox>
