@@ -4,7 +4,6 @@ module com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion {
 
     requires com.dlsc.formsfx;
     requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
     requires java.sql;
     requires io;
     requires kernel;

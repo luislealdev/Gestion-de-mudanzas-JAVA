@@ -25,42 +25,39 @@
                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
             </padding>
 
-            <Label text="Nombre completo" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-padding: 10 0"/>
+            <Label text="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-padding: 10 0"/>
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
-            <Label text="Teléfono" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-padding: 10 0"/>
+            <Label text="Primer apellido" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-padding: 10 0"/>
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
-            <Label text="Correo electrónico" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-padding: 10 0"/>
+            <Label text="Segundo apellido" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-padding: 10 0"/>
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-            <Label text="Dirección origen" GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-padding: 10 0"/>
+            <Label text="Teléfono" GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-padding: 10 0"/>
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
-            <Label text="Dirección destino" GridPane.columnIndex="0" GridPane.rowIndex="4" style="-fx-padding: 10 0"/>
+            <Label text="Correo electrónico" GridPane.columnIndex="0" GridPane.rowIndex="4" style="-fx-padding: 10 0"/>
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
-            <Label text="Servicios solicitados (uno o varios)" GridPane.columnIndex="0" GridPane.rowIndex="5"
+            <Label text="Dirección origen" GridPane.columnIndex="0" GridPane.rowIndex="5" style="-fx-padding: 10 0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+            <Label text="Dirección destino" GridPane.columnIndex="0" GridPane.rowIndex="6" style="-fx-padding: 10 0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+            <Label text="Servicios solicitados (uno o varios)" GridPane.columnIndex="0" GridPane.rowIndex="7"
                    style="-fx-padding: 10 0"/>
-            <GridPane GridPane.rowIndex="5" GridPane.columnIndex="1">
-                <CheckBox text="Transporte de carros" GridPane.rowIndex="0" GridPane.columnIndex="0"
-                          style="-fx-padding: 5"/>
-                <CheckBox text="Muebles de casa" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-padding: 5"/>
+            <VBox GridPane.rowIndex="8" GridPane.columnIndex="1" fx:id="select_services"/>
 
-                <CheckBox text="Cosas de oficina" GridPane.rowIndex="1" GridPane.columnIndex="0"
-                          style="-fx-padding: 5"/>
-                <CheckBox text="Empacadores y transportistas" GridPane.rowIndex="1" GridPane.columnIndex="1"
-                          style="-fx-padding: 5"/>
-            </GridPane>
+            <Label text="Fecha programada" GridPane.rowIndex="9" GridPane.columnIndex="0" style="-fx-padding: 10 0"/>
+            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="9"/>
 
-            <Label text="Fecha programada" GridPane.rowIndex="7" GridPane.columnIndex="0" style="-fx-padding: 10 0"/>
-            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="7"/>
-
-            <Label text="Observaciones" GridPane.rowIndex="8" GridPane.columnIndex="0" style="-fx-padding: 10 0"/>
-            <TextArea GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+            <Label text="Observaciones" GridPane.rowIndex="10" GridPane.columnIndex="0" style="-fx-padding: 10 0"/>
+            <TextArea GridPane.rowIndex="10" GridPane.columnIndex="1"/>
         </GridPane>
 
-        <Button text="Solicitar ahora" styleClass="btn-primary"/>
+        <Button text="Solicitar ahora" styleClass="btn-primary" fx:id="btn_solicitar_ahora"/>
 
     </VBox>
 

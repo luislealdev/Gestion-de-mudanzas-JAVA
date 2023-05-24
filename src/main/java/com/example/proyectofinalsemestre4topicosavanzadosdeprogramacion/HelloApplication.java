@@ -123,7 +123,6 @@ public class HelloApplication extends Application {
 
         Scene scene = new Scene(borderPane, 1500, 800);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles/index.css")).toString());
-        scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
 
         primaryStage.setScene(scene);
 

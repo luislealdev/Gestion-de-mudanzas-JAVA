@@ -9,6 +9,11 @@ TextField{
     -fx-border-radius: 10px;
 }
 
+.btn-primary:hover{
+    -fx-background-color: #00364b;
+    -fx-cursor: hand;
+}
+
 .bg-color-grey{
     -fx-background-color: #f8f8f8;
     -fx-background-radius:50px;

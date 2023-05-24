@@ -1,24 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion.controllers.AdminController"
-            prefHeight="400.0" prefWidth="600.0">
-        <Label text="Servicios"/>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectofinalsemestre4topicosavanzadosdeprogramacion.controllers.AdminController"
+      style="-fx-background-color: white"
+      maxWidth="Infinity"
+>
+<!--
+    <HBox maxWidth="Infinity">
+        <TableView fx:id="tbl_servicio">
+            <columns>
+                <TableColumn text="ID_SERVICIO">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id_tipo_servicio"/>
+                    </cellValueFactory>
+                </TableColumn>
 
-        <Label text="Solicitudes"/>
+                <TableColumn text="NAME_SERVICE" maxWidth="Infinity">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="servicio"/>
+                    </cellValueFactory>
+                </TableColumn>
 
-        <Label text="Mensajes"/>
+                <TableColumn text="PRICE">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="precio"/>
+                    </cellValueFactory>
+                </TableColumn>
 
-        <Label text="Información de contacto"/>
+                <TableColumn text="IMAGE">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="image"/>
+                    </cellValueFactory>
+                </TableColumn>
 
-        <Label text="Usuarios"/>
+                <TableColumn text="ESTATUS">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="estatus"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <VBox>
+            <Label text="Modificar Servicios" style="-fx-font-size: 25px"/>
+            <GridPane>
 
-        <Label text="Reportes"/>
-</AnchorPane>
+            </GridPane>
+        </VBox>
+        <VBox>
+        </VBox>
+    </HBox>
+
+    <Label text="Solicitudes"/>
+
+    <Label text="Mensajes"/>
+
+    <Label text="Información de contacto"/>
+
+    <Label text="Usuarios"/>
+
+    <Label text="Reportes"/>
+    -->
+    <children>
+        <VBox layoutX="31.0" layoutY="29.0" prefHeight="113.0" prefWidth="130.0" spacing="15.0">
+            <children>
+                <Label text="ID_TipoServicio" />
+                <Label text="Servicio" />
+            </children>
+        </VBox>
+        <VBox layoutX="162.0" layoutY="29.0" prefHeight="114.0" prefWidth="150.0" spacing="5.0">
+            <children>
+                <TextField fx:id="tfId_servicio" />
+                <TextField fx:id="tfServicio" />
+            </children>
+        </VBox>
+        <Button fx:id="btnInsertService" layoutX="31.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="68.0" text="Insertar" />
+        <Button fx:id="btnUpdateService" layoutX="116.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Actualizar" />
+        <Button fx:id="btnDeleteService" layoutX="204.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="68.0" text="Borrar" />
+        <TableView fx:id="tvServicios" layoutX="325.0" layoutY="29.0" onMouseClicked="#handleTableViewAction" prefHeight="362.0" prefWidth="498.0">
+            <columns>
+                <TableColumn fx:id="colId_servicio" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colServicio" prefWidth="422.4000305175781" text="Servicio" />
+            </columns>
+        </TableView>
+    </children>
+
+
+    <children>
+        <VBox layoutX="32.0" layoutY="26.0" prefHeight="206.0" prefWidth="110.0" spacing="15.0">
+            <children>
+                <Label text="ID_Cliente" />
+                <Label text="Nombre" />
+                <Label text="Primer Apeido" />
+                <Label text="Segundo Apeido" />
+                <Label text="Correo" />
+                <Label text="Telefono" />
+            </children>
+        </VBox>
+        <VBox layoutX="142.0" layoutY="26.0" prefHeight="206.0" prefWidth="152.0" spacing="6.0">
+            <children>
+                <TextField fx:id="tfIdCliente" />
+                <TextField fx:id="tfNombre" />
+                <TextField fx:id="tfPrimerApeido" />
+                <TextField fx:id="tfSegundoApeido" />
+                <TextField fx:id="tfCorreo" />
+                <TextField fx:id="tfTelefono" />
+            </children>
+        </VBox>
+        <Button fx:id="btnInsertClient" layoutX="32.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="68.0" text="Insertar" />
+        <Button fx:id="btnUpdateClient" layoutX="131.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Actualizar" />
+        <Button fx:id="btnDeleteClient" layoutX="230.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="68.0" text="Eliminar" />
+        <TableView fx:id="tvClientes" layoutX="341.0" layoutY="26.0" onMouseClicked="#handleTableViewAction" prefHeight="366.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="colIdCliente" prefWidth="75.0" text="IDCliente" />
+                <TableColumn fx:id="colNombre" prefWidth="103.20001220703125" text="Nombre" />
+                <TableColumn fx:id="colPApeido" prefWidth="82.39996337890625" text="P Apeido" />
+                <TableColumn fx:id="colSApeido" prefWidth="72.0" text="S Apeido" />
+                <TableColumn fx:id="colCorreo" prefWidth="87.199951171875" text="Correo" />
+                <TableColumn fx:id="colTelefono" prefWidth="78.39996337890625" text="Telefono" />
+            </columns>
+        </TableView>
+    </children>
+
+
+    <children>
+        <VBox layoutX="35.0" layoutY="14.0" prefHeight="342.0" prefWidth="110.0" spacing="21.0">
+            <children>
+                <Label prefHeight="18.0" prefWidth="88.0" text="ID_Usuario" />
+                <Label prefHeight="18.0" prefWidth="88.0" text="Usuario" />
+                <Label prefHeight="18.0" prefWidth="88.0" text="Password" />
+                <Label prefHeight="18.0" prefWidth="88.0" text="Empresa" />
+                <Label prefHeight="18.0" prefWidth="88.0" text="Rol" />
+            </children>
+        </VBox>
+        <VBox layoutX="108.0" layoutY="14.0" prefHeight="342.0" prefWidth="179.0" spacing="15.0">
+            <children>
+                <TextField fx:id="tfid_usuario" />
+                <TextField fx:id="tfUsuario" />
+                <PasswordField fx:id="tfPassword" />
+                <TextField fx:id="tfEmpresa" />
+                <TextField fx:id="tfRol" />
+            </children>
+        </VBox>
+        <TableView fx:id="tvUsers" layoutX="300.0" layoutY="14.0" onMouseClicked="#handleTableViewAction" prefHeight="342.0" prefWidth="528.0">
+            <columns>
+                <TableColumn fx:id="cold_usuario" prefWidth="75.0" text="ID_Usuario" />
+                <TableColumn fx:id="colUsuario" prefWidth="146.4000244140625" text="Usuario" />
+                <TableColumn fx:id="colPassword" minWidth="3.99993896484375" prefWidth="90.39996337890625" text="Password" />
+                <TableColumn fx:id="colid_empresa" minWidth="0.0" prefWidth="107.20001220703125" text="Empresa" />
+                <TableColumn fx:id="col_idRol" prefWidth="107.20001220703125" text="Rol" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnInsertUser" layoutX="22.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Insertar" />
+        <Button fx:id="btnUpdateUser" layoutX="93.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Actualizar" />
+        <Button fx:id="btnDeleteUser" layoutX="172.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Borrar" />
+    </children>
+</VBox>
